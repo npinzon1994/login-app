@@ -12,6 +12,13 @@ const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false);
 
   
+  //IMPORTANT TO KNOW ORDER EACH LOG IS PRINTED TO THE CONSOLE
+  useEffect(() => {
+    console.log('EFFECT RUNNING');
+    return () => {
+      console.log('EFFECT CLEANUP');
+    };
+  }, []);
   
   
   /*
